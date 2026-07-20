@@ -21,3 +21,11 @@ cargo +nightly fuzz run kernel_elf -- -max_total_time=60 -timeout=5 -rss_limit_m
 Any crash or timeout is a release blocker until its minimized input is reviewed, added as a named
 regression fixture, and covered by the ordinary stable-toolchain test gate. Never commit raw fuzz
 artifacts without checking them for host paths or sensitive data.
+
+Before a bounded `kernel_elf` campaign, also run the target once against the exact kernel selected by
+the reproducibility report. That positive oracle check prevents the fuzz assertions from drifting to
+a stricter, incompatible profile than the parser and real linker output:
+
+```sh
+cargo +nightly fuzz run kernel_elf target/polytope/verified/polytope-kernel-x86_64 -- -runs=1
+```
