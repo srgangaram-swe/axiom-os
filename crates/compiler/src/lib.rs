@@ -1,4 +1,4 @@
-#![doc = "`Axiom` compiler front-end primitives."]
+#![doc = "`Facet` compiler front-end primitives."]
 
 /// A byte range in source text, expressed as a half-open interval.
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
@@ -46,7 +46,7 @@ pub struct LexError {
     pub offset: usize,
 }
 
-/// Allocation-free streaming lexer for the Axiom language.
+/// Allocation-free streaming lexer for the Facet language.
 pub struct Lexer<'source> {
     source: &'source str,
     offset: usize,
