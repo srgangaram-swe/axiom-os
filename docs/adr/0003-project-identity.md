@@ -5,11 +5,12 @@
 
 ## Decision
 
-Name the project PolytopeOS and its from-scratch compiler Facet. In convex geometry, a
+Name the project PolytopeOS and its from-scratch toolchain the Polytope compiler. In convex geometry, a
 polytope is the feasible region defined by simultaneous constraints. That is a direct model
 for the project's differentiator: workloads declare CPU, GPU, memory, latency, energy,
 locality, and reproducibility constraints; resource policy finds and explains a feasible
-allocation. Facets are the boundaries of that feasible region.
+allocation. A separate compiler sub-brand is intentionally avoided until it provides user value
+and passes the same collision review.
 
 ## Context
 
@@ -22,4 +23,4 @@ all source, package, issue, and repository-facing names use PolytopeOS going for
 
 Performance claims still require evidence; the geometric language is a design model, not a
 claim that every policy is a convex optimization problem. New naming must use `polytope-os`
-for the repository, `polyctl` for the developer CLI, and Facet for compiler/language work.
+for the repository, `polyctl` for the developer CLI, and Polytope compiler/language for toolchain work.

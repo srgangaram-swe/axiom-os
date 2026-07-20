@@ -12,8 +12,8 @@ promises. Each milestone should deliver a demonstrable vertical slice.
 | 5 | Userspace boundary | Syscall ABI, ELF loader, process isolation, capabilities, init service |
 | 6 | Storage and device model | VFS, initramfs, block abstraction, safe driver lifecycle, persistence tests |
 | 7 | Network and distributed substrate | NIC path, TCP/IP baseline, zero-copy messaging experiments, observability |
-| 8 | Facet compiler front end | Language spec, parser, typed AST, diagnostics, fuzzing, golden tests |
-| 9 | Facet compiler middle/back end | SSA IR, optimization passes, code generation, debugger metadata |
+| 8 | Polytope compiler front end | Language spec, parser, typed AST, diagnostics, fuzzing, golden tests |
+| 9 | Polytope compiler middle/back end | SSA IR, optimization passes, code generation, debugger metadata |
 | 10 | Intent-aware resource plane | Workload contracts, topology model, scheduler policy API, traceable decisions |
 | 11 | Accelerator/HPC vertical slice | GPU abstraction, NUMA/huge pages, collective primitives, MPI-compatible study |
 | 12 | Developer experience | Shell, package/workspace manifests, reproducible environments, remote workflows |

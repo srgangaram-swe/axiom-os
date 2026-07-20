@@ -20,7 +20,7 @@ research project, not yet an operating system suitable for production use.
   HPC, distributed training/inference, databases, and low-jitter quantitative systems.
 - **Safe systems core:** Rust for memory-safe kernel and service code; narrowly scoped C
   and assembly only at ABI, firmware, and architecture boundaries.
-- **Facet compiler:** a from-scratch compiler toolchain developed alongside the OS, with
+- **Polytope compiler:** a from-scratch compiler toolchain developed alongside the OS, with
   explicit intermediate representations and diagnostics.
 
 The name comes from convex geometry: a polytope is the feasible region cut out by many
@@ -29,7 +29,7 @@ and reproducibility objectives, making resource tradeoffs explicit and explainab
 
 ## Current foundation
 
-The Cargo workspace contains a `no_std` kernel state model, an initial Facet compiler lexer,
+The Cargo workspace contains a `no_std` kernel state model, an initial Polytope compiler lexer,
 and the host-side `polyctl` developer CLI. Run the fast local quality gate with:
 
 ```sh

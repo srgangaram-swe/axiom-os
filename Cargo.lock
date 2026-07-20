@@ -3,11 +3,11 @@
 version = 4
 
 [[package]]
-name = "facet-compiler"
+name = "polyctl"
 version = "0.1.0"
 
 [[package]]
-name = "polyctl"
+name = "polytope-compiler"
 version = "0.1.0"
 
 [[package]]
